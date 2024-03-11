@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <title>Design by WHO-PROGRAMMER</title>
+  </head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background: linear-gradient(to right, #2d1b3e 50%, #ffffff 50%);
+  overflow-x: hidden;
+}
+.logo {
+  width: 150px;
+  filter: grayscale(100%);
+  background: white;
+  border-radius: 2px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container nav ul {
+  display: flex;
+}
+.nav-container nav li {
+  margin-right: 20px;
+}
+.nav-container a {
+  font-size: 1.2rem;
+  color: #49266b;
+}
+.button {
+  background-color: #2d1b3e;
+  padding: 8px 10px;
+  color: #ffffff !important;
+  border-radius: 5px;
+}
+/* Hero */
+.hero {
+  color: #ffffff;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+/* Hero Left */
+.hero-left {
+  width: 50%;
+  padding: 40px;
+}
+.hero-left h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.hero-left span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.hero-left p {
+  inline-size: 450px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.btns-button {
+  background-color: #ffffff;
+  margin-right: 20px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.btns a {
+  font-size: 1.1rem;
+  color: #2d1b3e;
+}
+
+/* Hero Right */
+.hero-right {
+  color: #49266b;
+  width: 50%;
+  padding: 40px;
+}
+.right-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.right-top .rtop-img {
+  width: 80%;
+}
+.right-top .soc-icons {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d1b3e;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+.right-top .soc-icons img {
+  width: 32px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.img-box img{
+  cursor: pointer;
+transition: .3s;
+}
+.right-top{transition: .5s;}
+.soc-icons img:hover, .img-box img:hover{scale: 1.1;}
+.right-bottom .give-icon {
+  width: 10%;
+}
+.right-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.right-bottom .img-box{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right-bottom .cta p {
+  inline-size: 80px;
+  text-align: right;
+}
+.right-bottom .cta span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #2d1b3e;
+}
+.addan{
+  opacity: 0;
+  border-radius: 1000px;
+  animation: addan .4s ease forwards;
+  scale: .4;
+}
+@keyframes addan {
+  100%{opacity: 1; border-radius: 0px; scale: 1;}
+}
+@media (max-width:1036px) {
+body {
+  background:  #2d1b3e;
+}
+.hero {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-left {
+  width: 95%;
+  margin: auto;
+  padding: 5vw 0;
+}
+.hero-right {
+  width: 95%;
+  margin: auto;
+  padding: 5vw 0;
+}
+.nav-container li a{
+  color: #ffffff;
+}
+.nav-container .button{border: 1px solid white; transition: .3s;}
+.nav-container .button:hover{color: #49266b !important; background-color: #ffffff;}
+.hero-left p {
+  max-width: 100%;
+}
+.right-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  flex-direction: column;
+}
+.right-top .soc-icons {
+  flex-direction: row;
+  background-color: #ffffff;
+  margin-left: 0px;
+}
+.cta-content{color: #ffffff;}
+}
+@media (max-width:680px) {
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo{margin: auto; margin-bottom: 20px;}
+  .nav-container{justify-content: center;}
+}
+@media (max-width:500px) {
+  .hero-left h1{
+    font-size: 10vw;
+  }
+  .navbar{padding: 20px 0; padding-bottom: 0px;}
+  .nav-container{flex-direction: column;}
+.nav-container .button{margin-top: 20px;}
+li{margin: 0px !important;}
+ul{gap: 13px;}
+}
+  </style>
+  <body>
+    <header>
+      <!-- Navigation Menu -->
+      <div class="navbar">
+        <div class="logo"><img src="./logo1.png" width="100%" alt=""></div>
+        <div class="nav-container">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="button">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Hero Left -->
+      <div class="hero-left">
+        <h1>Water belongs to everyone.</h1>
+        <span></span>
+        <h3>Not everyone has access to it.</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+          inventore tempore velit, assumenda iste unde vitae! Maxime deserunt
+          aut minus ea corporis vero voluptatem doloremque impedit dolore, eius
+          tempora deleniti.
+        </p>
+        <div class="btns">
+          <a href="#" class="btns-button">Donate</a>
+          <a href="#">Read More...</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="right-top">
+          <img src="https://cdn.dribbble.com/users/3992161/screenshots/9070565/walker_4x.jpg" alt="noimage" class="rtop-img" />
+          <div class="soc-icons">
+            <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YouTube.max-1100x1100.png" alt="" />
+            <img src="https://cdn.dribbble.com/users/10250521/screenshots/19740915/twitter-3d-icon.jpg" alt="" />
+            <img src="https://www.stendymallet.com/wp-content/uploads/2020/11/Facebook-logo-3d-button-social-media-png-3.png" alt="" />
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="cta">
+            <div class="cta-content">
+              <p>You are the difference.</p>
+              <span></span>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="https://cdn.dribbble.com/users/3992161/screenshots/9070565/walker_4x.jpg" alt="" class="give-icon sel1" >
+          <img src="https://i.pinimg.com/originals/7c/b9/d4/7cb9d4821f754f0b55e5d5322fa3b63b.jpg" alt="" class="give-icon sel2" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <script>
+      let sel1 = document.querySelector(".sel1")
+      let sel2 = document.querySelector(".sel2")
+      let imgsen = document.querySelector(".rtop-img")
+          sel1.addEventListener("click", () => {
+            imgsen.removeAttribute("src")
+            imgsen.setAttribute("src","https://cdn.dribbble.com/users/3992161/screenshots/9070565/walker_4x.jpg")
+            imgsen.classList.add("addan")
+          })
+          sel2.addEventListener("click", () => {
+            imgsen.removeAttribute("src")
+            imgsen.setAttribute("src","https://i.pinimg.com/originals/35/65/60/3565605158733c30dc0a6143c9a7c1ae.png")
+            imgsen.classList.add("addan")
+          })
+          setTimeout(function(){ 
+              sel1.addEventListener("mouseout", () => {
+            imgsen.classList.remove("addan")
+          })
+          sel2.addEventListener("mouseout", () => {
+            imgsen.classList.remove("addan")
+          })
+           }, 2000);
+         
+    </script>
+  </body>
+</html>
